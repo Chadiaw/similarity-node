@@ -30,6 +30,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,css,md}": "prettier --config .\\.prettierrc --write main.js"
+    "*.{js,css,md}": "prettier --config .\\.prettierrc --write *.js"
   }
 }
