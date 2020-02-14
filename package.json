@@ -1,0 +1,35 @@
+{
+  "name": "similarity-node",
+  "version": "1.0.0",
+  "description": "testing different string similarity algorithms",
+  "main": "main.js",
+  "dependencies": {
+    "talisman": "^0.21.0"
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.7",
+    "prettier": "1.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chadiaw/similarity-node.git"
+  },
+  "author": "chadiaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chadiaw/similarity-node/issues"
+  },
+  "homepage": "https://github.com/Chadiaw/similarity-node#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --config .\\.prettierrc --write main.js"
+  }
+}
